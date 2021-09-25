@@ -1,0 +1,231 @@
+{
+    "qna": {
+        "result1": {
+            "question": "A person with well-developed abdominal muscles is said to have a what?",
+            "answer1": "One-pack",
+            "answer2": "Six-pack",
+            "answer3": "12-pack",
+            "answer4": "Family-pack",
+            "correct": 2
+            
+        },
+        "result2": {
+            "question": "Which two words traditionally appear onscreen at the termination of a feature film?",
+            "answer1": "The End",
+            "answer2": "The Conclusion",
+            "answer3": "The Finish",
+            "answer4": "The Pizza Rolss are done",
+            "correct": 1
+            
+        },
+        "result3": {
+            "question": "A magnet would most likely attract which of the following?",
+            "answer1": "Metal",
+            "answer2": "Plastic",
+            "answer3": "Wood",
+            "answer4": "The wrong man",
+            "correct": 1
+            
+        },
+        "result4": {
+            "question": "Which of these names is not in the title of a Shakespeare play?",
+            "answer1": "Hamlet",
+            "answer2": "Romeo",
+            "answer3": "Macbeth",
+            "answer4": "Darren",
+            "correct": 4
+            
+        },
+        "result5": {
+            "question": "Where did Scotch whisky originate?",
+            "answer1": "Ireland",
+            "answer2": "Wales",
+            "answer3": "The United States",
+            "answer4": "Scotland",
+            "correct": 4
+            
+        },
+        "result6": {
+            "question": "What name is traditionally given to the party held for a woman who is expecting a baby?",
+            "answer1": "Baby drizzle",
+            "answer2": "Baby shower",
+            "answer3": "Baby downpour",
+            "answer4": "Baby deluge",
+            "correct": 2
+            
+        },
+        "result7": {
+            "question": "In fancy hotels, it is traditional for what tantalizing treat to be left on your pillow?",
+            "answer1": "A pretzel",
+            "answer2": "An apple",
+            "answer3": "A mint",
+            "answer4": "a photo of wolf Blitzer",
+            "correct": 3
+            
+        },
+        "result8": {
+            "question": "In the United States, what is traditionally the proper way to address a judge?",
+            "answer1": "Your holiness",
+            "answer2": "Your honor",
+            "answer3": "Your eminence",
+            "answer4": "You da man!",
+            "correct": 2
+            
+        },
+        "result9": {
+            "question": "Which of these pairs of apps offers roughly the same type of service?",
+            "answer1": "Snapchat and Grubhub",
+            "answer2": "Whatsapp and SHAREit",
+            "answer3": "TikTok and Spotify",
+            "answer4": "Lyft and Uber",
+            "correct": 4
+            
+        },
+        "result10": {
+            "question": "The popular children's song: It's Raining, It's Pouring mentions an old man doing what?",
+            "answer1": "Snoring",
+            "answer2": "Cooking",
+            "answer3": "Laughing",
+            "answer4": "Yelling at squirrels",
+            "correct": 1
+            
+        },
+        "result11": {
+            "question": "At a restaurant, someone who: foots the bill does what?",
+            "answer1": "Kisses it",
+            "answer2": "Kisses it",
+            "answer3": "Hopes to get lucky",
+            "answer4": "Pays it",
+            "correct": 4
+            
+        },
+        "result12": {
+            "question": "In which of these films does Whoopi Goldberg dress up as a nun?",
+            "answer1": "Sister Act",
+            "answer2": "Ghost",
+            "answer3": "The Color Purple",
+            "answer4": "How Judas Got His Groove Back",
+            "correct": 1
+            
+        },
+        "result13": {
+            "question": "If someone asked to see your ID, what might you show them?",
+            "answer1": "Your tongue",
+            "answer2": "Your teeth",
+            "answer3": "Your passport",
+            "answer4": "The door",
+            "correct": 3
+            
+        },
+        "result14": {
+            "question": "According to a common phrase, a person who takes chances is: going out on a what?",
+            "answer1": "Limb",
+            "answer2": "Horse",
+            "answer3": "Skateboard",
+            "answer4": "Nude beach",
+            "correct": 1
+            
+        },
+        "result15": {
+            "question": "Due to the geographical areas they represented, the opposing sides of the US Civil War were known by what names?",
+            "answer1": "The Hills and the Valleys",
+            "answer2": "The Cities and the Farms",
+            "answer3": "The North and the South ",
+            "answer4": "The Kool and the Gang",
+            "correct": 3
+            
+        },
+        "result16": {
+            "question": "According to the old saying,: love of what: is the root of all evil?",
+            "answer1": "Food",
+            "answer2": "Money",
+            "answer3": "Clothing",
+            "answer4": "Reality television",
+            "correct": 2
+            
+        },
+        "result17": {
+            "question": "A geologist would likely be LEAST helpful for answering questions about which of the following?",
+            "answer1": "Granite boulders",
+            "answer2": "Precious stones",
+            "answer3": "Igneous rocks",
+            "answer4": "Fruity Pebbles",
+            "correct": 4
+            
+        },
+        "result18": {
+            "question": "A feisty train is the hero of a classic children's book titled The Little Engine That what?",
+            "answer1": "Ran",
+            "answer2": "Cried",
+            "answer3": "Could",
+            "answer4": "Opened a can of whupass",
+            "correct": 3
+            
+        },
+        "result19": {
+            "question": "A person who is not a banker and lends money at an extremely high interest rate is known as what?",
+            "answer1": "Loan shark",
+            "answer2": "Green snake",
+            "answer3": "Paper tiger",
+            "answer4": "Brother-in-law",
+            "correct": 1
+            
+        },
+        "result20": {
+            "question": "A well-known lyric in the holiday song: Silver Bells promises that soon it will be what?",
+            "answer1": "July 4th weekend",
+            "answer2": "Halloween night",
+            "answer3": "Christmas Day",
+            "answer4": "National Burrito Month",
+            "correct": 3
+            
+        },
+        "result21": {
+            "question": "When a person is rudely ignored, he is said to be getting what?",
+            "answer1": "Hot knee",
+            "answer2": "Warm toe",
+            "answer3": "Could shoulder",
+            "answer4": "Hix car fixed",
+            "correct": 3
+            
+        },
+        "result22": {
+            "question": "A common piece of advice goes,: Be there or be what?",
+            "answer1": "Bare",
+            "answer2": "Square",
+            "answer3": "Awara",
+            "answer4": "All alone as usual",
+            "correct": 2
+            
+        },
+        "result23": {
+            "question": "And many more is a line commonly sung at the end of what traditional ditty?",
+            "answer1": "Old MacDonald",
+            "answer2": "Jolly Good Fellow",
+            "answer3": "Happy Birthday",
+            "answer4": "Home on the Range",
+            "correct": 3
+            
+        },
+        "result24": {
+            "question": "If you're trying to find other players in a game of hide-and-seek, what are you most likely called?",
+            "answer1": "Butterbean",
+            "answer2": "Stinky",
+            "answer3": "Dunce",
+            "answer4": "IT",
+            "correct": 4
+            
+        },
+        "result25": {
+            "question": "Which of these phrases is slang for: someone who has a strong and unyielding attitude?",
+            "answer1": "Boiled ham",
+            "answer2": "Tough cookie",
+            "answer3": "Ruffled chip",
+            "answer4": "Soggy cereal",
+            "correct": 2
+            
+        }
+        
+        
+    }
+}

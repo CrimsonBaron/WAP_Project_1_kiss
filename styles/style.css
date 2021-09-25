@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+body, html {
+  background-color: #232323;
+  color: white;
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+header, footer {
+  height: 4%;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 0.75rem;
+  -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 200px;
+      grid-template-areas: "Timer Timer Reward" "Timer  Timer Reward" "Questions Questions Reward" "Questions Questions Reward";
+}
+
+main > * {
+  background-color: #2c2a2a;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+main .Questions {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: Questions;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-auto-rows: 100px;
+  gap: 2rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+main .Questions .Help {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 25%;
+  height: 65%;
+}
+
+main .Questions .Help .Helpers, main .Questions .Help .Helpers-used {
+  border-radius: 10px;
+  border: 2px solid white;
+  width: 25%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+main .Questions .Help .Helpers-used {
+  border-color: #3b3b3b;
+  color: #3b3b3b;
+}
+
+main .Questions .Help .Helpers:hover {
+  border-color: #7C5E4A;
+  color: #7C5E4A;
+  -webkit-transition: border-color .25s ease-in-out , color .25s ease-in-out;
+  transition: border-color .25s ease-in-out , color .25s ease-in-out;
+}
+
+main .Questions .Answer, main .Questions .Answer-50, main .Questions .Answer-g50 {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  border: 2px solid white;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  font-size: 2.75vmin;
+  cursor: pointer;
+}
+
+main .Questions .Answer-50 {
+  border-color: #3b3b3b;
+  color: #3b3b3b;
+}
+
+main .Questions .Answer-g50 {
+  color: #7C5E4A;
+}
+
+main .Questions .Answer:nth-child(2), main .Questions .Answer:nth-child(4), main .Questions .Answer-g50:nth-child(2), main .Questions .Answer-g50:nth-child(4), main .Questions .Answer-50:nth-child(2), main .Questions .Answer-50:nth-child(4) {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+main .Questions .Answer:hover, main .Questions .Answer-g50:hover {
+  border-color: #7C5E4A;
+  color: #7C5E4A;
+  -webkit-transition: border-color .25s ease-in-out , color .25s ease-in-out;
+  transition: border-color .25s ease-in-out , color .25s ease-in-out;
+}
+
+main .Reward {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 3;
+  grid-area: Reward;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (minmax(15px, auto))[auto-fit];
+      grid-template-rows: repeat(auto-fit, minmax(15px, auto));
+  gap: 1rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+main .Reward .Rewards, main .Reward .Rewards-won {
+  padding: 5px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 89%;
+  text-align: center;
+  font-size: 2.75vmin;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+main .Reward .Rewards-won {
+  color: #7C5E4A;
+  border: 0.5px solid #7C5E4A;
+}
+
+main .Timer {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: Timer;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 200px;
+  gap: 0.5rem;
+  justify-items: center;
+}
+
+main .Timer .NickQuestion {
+  width: 95%;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.75vmin;
+  text-overflow: auto;
+}
+
+main .Timer .NickQuestion .Nick {
+  width: 25%;
+}
+
+main .Timer .NickQuestion .Nick span {
+  color: #7C5E4A;
+}
+
+main .Timer .NickQuestion .Question {
+  width: 75%;
+  word-wrap: break-word;
+}
+
+main .Timer .ATimer {
+  width: 90%;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10vmin;
+}
+
+main .Wrapper, main .Wrapper-won {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.75vmin;
+}
+
+main .Wrapper .Wrapper2, main .Wrapper .Wrapper-won2, main .Wrapper-won .Wrapper2, main .Wrapper-won .Wrapper-won2 {
+  width: 50%;
+  height: 50%;
+  background-color: #2c2a2a;
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  -webkit-box-shadow: 0 3px 10px black;
+          box-shadow: 0 3px 10px black;
+}
+
+main .Wrapper .Wrapper2 h1, main .Wrapper .Wrapper-won2 h1, main .Wrapper-won .Wrapper2 h1, main .Wrapper-won .Wrapper-won2 h1 {
+  letter-spacing: 5px;
+  margin-top: 10px;
+}
+
+main .Wrapper .Wrapper2 .Enter, main .Wrapper .Wrapper2 .Replay, main .Wrapper .Wrapper-won2 .Enter, main .Wrapper .Wrapper-won2 .Replay, main .Wrapper-won .Wrapper2 .Enter, main .Wrapper-won .Wrapper2 .Replay, main .Wrapper-won .Wrapper-won2 .Enter, main .Wrapper-won .Wrapper-won2 .Replay {
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-radius: 10px;
+  border: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+main .Wrapper .Wrapper2 .Enter:hover, main .Wrapper .Wrapper2 .Replay:hover, main .Wrapper .Wrapper-won2 .Enter:hover, main .Wrapper .Wrapper-won2 .Replay:hover, main .Wrapper-won .Wrapper2 .Enter:hover, main .Wrapper-won .Wrapper2 .Replay:hover, main .Wrapper-won .Wrapper-won2 .Enter:hover, main .Wrapper-won .Wrapper-won2 .Replay:hover {
+  color: #7C5E4A;
+  border-color: #7C5E4A;
+  -webkit-transition: border-color .25s ease-in-out , color .25s ease-in-out;
+  transition: border-color .25s ease-in-out , color .25s ease-in-out;
+}
+
+main .Wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .Wrapper .Wrapper2 {
+  -ms-grid-rows: (minmax(50px, 1fr))[3];
+      grid-template-rows: repeat(3, minmax(50px, 1fr));
+}
+
+main .Wrapper .Wrapper2 input {
+  background-color: #232323;
+  width: 80%;
+  height: 45%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #7C5E4A;
+  background-color: #232323;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+  font-size: 2.75vmin;
+  text-align: center;
+}
+
+main .Wrapper .Wrapper2 .Enter {
+  width: 70%;
+  height: 75%;
+}
+
+main .Wrapper-won {
+  display: none;
+}
+
+main .Wrapper-won .Wrapper-won2 {
+  -ms-grid-rows: (minmax(50px, 1fr))[2];
+      grid-template-rows: repeat(2, minmax(50px, 1fr));
+}
+
+main .Wrapper-won .Wrapper-won2 h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #7C5E4A;
+}
+
+main .Wrapper-won .Wrapper-won2 .Replay {
+  width: 50%;
+  height: 50%;
+}
+
+@media only screen and (max-width: 1385px) {
+  main .Questions {
+    -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 1230px) {
+  main .Questions {
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  main .Questions {
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  main .Timer .NickQuestion {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .Timer .NickQuestion > * {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 882px) {
+  main {
+        grid-template-areas: "Timer Timer " "Timer  Timer " "Questions Questions " "Questions Questions " "Reward Reward" "Reward Reward" "Reward Reward";
+  }
+  main .Timer .NickQuestion {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .Questions {
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 605px) {
+  main .Questions {
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  main .Questions {
+    -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  main .Questions {
+    -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
+/*# sourceMappingURL=style.css.map */
